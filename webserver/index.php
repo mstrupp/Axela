@@ -1,3 +1,18 @@
+<?php
+// LED
+if ($_POST['Lampe'] == 'An') {
+	echo exec('sudo python test1.py');
+} elseif ($_POST['Lampe'] == 'Aus') {
+  echo exec('sudo python test0.py');
+}
+
+// RGB LED
+if ($_POST['Farbauswahl_RGB']) {
+	$rgbCode = $_POST['Farbauswahl_RGB'];
+	echo exec("sudo python rgb.py '$rgbCode'");
+}
+?>
+
 <!DOCTYPE html> <html> <head> <title>Welcome to Axela!</title> <style>
     body {
         width: 35em;
@@ -21,7 +36,7 @@
 
 <h4>RGB LED</h4>
 <form method="post" action="">
-	<input type="color" name="Farbauswahl_RGB" value=""/>
+	<input type="color" name="Farbauswahl_RGB" value="<?php echo exec('python readRGB.py') ?>"/>
 	<input type="submit"/>
 </form>
 
@@ -38,18 +53,3 @@
 
 </body>
 </html>
-
-<?php
-// LED
-if ($_POST['Lampe'] == 'An') {
-	echo exec('sudo python test1.py');
-} elseif ($_POST['Lampe'] == 'Aus') {
-  echo exec('sudo python test0.py');
-}
-
-// RGB LED
-if ($_POST['Farbauswahl_RGB']) {
-	$rgbCode = $_POST['Farbauswahl_RGB'];
-	echo exec("sudo python rgb.py '$rgbCode'");
-}
-?>

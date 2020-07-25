@@ -14,4 +14,5 @@ file.seek(0)
 blue = file.read()
 file.close()
 
-print(red, 8)
+print('#{:02x}{:02x}{:02x}'.format(ord(red), ord(green), ord(blue)))
+

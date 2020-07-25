@@ -42,14 +42,14 @@
 <?php
 // LED
 if ($_POST['Lampe'] == 'An') {
-	echo exec('sudo python /var/www/html/test1.py');
+	echo exec('sudo python test1.py');
 } elseif ($_POST['Lampe'] == 'Aus') {
-  echo exec('sudo python /var/www/html/test0.py');
+  echo exec('sudo python test0.py');
 }
 
 // RGB LED
 if ($_POST['Farbauswahl_RGB']) {
 	$rgbCode = $_POST['Farbauswahl_RGB'];
-	echo exec("sudo python /var/www/html/rgb.py '$rgbCode'");
+	echo exec("sudo python rgb.py '$rgbCode'");
 }
 ?>

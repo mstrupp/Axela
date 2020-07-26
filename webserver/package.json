@@ -1,0 +1,16 @@
+{
+  "name": "axela-webserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
+    "tailwindcss": "^1.5.2"
+  }
+}

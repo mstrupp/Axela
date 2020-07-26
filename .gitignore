@@ -1,0 +1,6 @@
+
+# Webserver npm
+webserver/node_modules
+
+# Webserver generated content
+webserver/public_html/*

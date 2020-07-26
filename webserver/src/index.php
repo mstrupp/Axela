@@ -13,15 +13,13 @@ if ($_POST['Farbauswahl_RGB']) {
 }
 ?>
 
-<!DOCTYPE html> <html> <head> <title>Welcome to Axela!</title> <style>
-    body {
-        width: 35em;
-        margin: 0 auto;
-        font-family: Tahoma, Verdana, Arial, sans-serif;
-    }
-</style>
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+  <title>Welcome to Axela!</title> 
+  <link rel="stylesheet" href="tailwind.css">
 </head>
-<body>
 
 <h1>Axela</h1>
 <h2>Smart Home System</h2>
@@ -50,6 +48,6 @@ if ($_POST['Farbauswahl_RGB']) {
 </div>
 <br><br><br>
 <p>Made by Axel and Michael © 2020</p>
-
+  </div>
 </body>
 </html>

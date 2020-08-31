@@ -85,3 +85,7 @@ Um einen Arduino als One Wire Slave Gerät zu benutzen wird die Bibliothek [OneW
 `constexpr timeOW_t ONEWIRE_TIME_MSG_HIGH_TIMEOUT = { 38000_us };`
 
 3. Das gewünschte Gerät aus dem Axela Projekt Ordner `Axela/devices`auswählen und das zugehörige Skript auf den Arduino laden.
+
+## Entwickler-Notizen
+
+Prinzipiell funktioniert das System. Die Steuerung der LEDs ist manchmal ein bisschen laggy. One Wire Bus scheint eine sehr gute Lösung für vorgefertigte One Wire Sensoren zu sein. Aktuatoren funktionieren jedoch nicht so gut. Im Nachhinein würden wir ein anderes Bussystem wählen.

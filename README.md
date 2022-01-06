@@ -1,5 +1,7 @@
 # Axela
 
+![alt text](documentation/Axela-Image.png "Axela Logo")
+
 LED Lampen im Zimmer werden über den One Wire Bus verbunden. Über einen zentralen Controller können die Lampen gesteuert werden.
 
 - Lampen an- und ausschalten.
